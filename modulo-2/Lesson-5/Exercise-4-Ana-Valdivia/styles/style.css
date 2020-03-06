@@ -1,0 +1,13 @@
+.container {
+    padding: 40px;
+}
+
+.blue {
+    background-color: aquamarine;
+    color: blue;
+}
+
+.yellow {
+    background: yellow;
+    color: orangered;
+}
