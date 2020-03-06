@@ -15,24 +15,27 @@ const pears = {
     mixnumber: 10,
     currentnumber: 5,
     initial: 0,
+
     add: function () {
         if (this.currentnumber < this.maxnumber) {
-            this.currentnumber += 1;
+            return this.currentnumber += 1;
         }
     },
     sub: function () {
 
         this.currentnumber = this.currentnumber - 1;
+        return this.currentnumber - 1;
     },
     reset: function () {
         this.currentnumber = this.initial;
+        return this.initial;
 
     },
 }
 
-pears.sub();
-// pears.sub();
-// pears.reset();
+let pearsQuanty = pears.add();
+let pearsSub = pears.sub();
+let pearsReset = pears.reset();
 
 
-console.log (pears.currentnumber);
+console.log (`Estamos aumentando ${pearsQuanty}`);
