@@ -1,0 +1,3 @@
+## EJERCICIO 8
+
+Sobre el ejercicio 2 vamos a cachear las búsquedas al servidor. De forma que cuando a busquemos una cadena a través del campo de búsqueda, primero busque en localStorage si ya tenemos un resultado en local para esa cadena. Si no lo hay se pide al servidor y luego se guarda en localStorage usando como clave el texto de la búsqueda; si al buscarlo en localStorage lo encontramos pues le enseñamos el resultado directamente al usuario y nos evitamos una petición al servidor.
