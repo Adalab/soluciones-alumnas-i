@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 
     <style>
-        .mainTitle {
-            font-family: 'Orbitron', sans-serif;
+
+        body {
+            background-color: black;
+            color: white;
         }
 
-        .searchButton{
+        .wrapper {
+            padding-top: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .mainTitle {
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+        }
+
+        .searchButton {
             background-color: yellow;
             padding: 10px;
             font-weight: 600;
             font-size: 20px;
             border-radius: 15px;
+            
         }
 
-        .inputPeople{
+        .inputPeople {
             padding: 10px;
             font-size: 16px;
         }
-
     </style>
     <title>Módulo 2.11 - Ejercicio 2</title>
 </head>
+
 <body>
-    
-    <h1 class="mainTitle">STAR WARS</h1>
-    
-    <input type="text" class="inputPeople" placeholder="Nombre del personaje">
-    <button class="searchButton">Busca!</button>
+    <div class="wrapper">
 
-    <ul class="listResult"></ul>
+        <h1 class="mainTitle">STAR WARS</h1>
 
+        <input type="text" class="inputPeople" placeholder="Nombre del personaje">
+        <button class="searchButton">Busca!</button>
 
+        <ul class="listResult"></ul>
+
+    </div>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
+
 </html>
